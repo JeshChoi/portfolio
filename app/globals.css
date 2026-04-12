@@ -69,9 +69,5 @@ body {
 }
 
 a, button {
-  transition: filter 0.2s ease, box-shadow 0.2s ease;
-}
-
-a:hover, button:hover {
-  filter: drop-shadow(0 0 8px rgba(255, 140, 58, 0.28));
+  transition: color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
