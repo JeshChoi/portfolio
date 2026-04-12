@@ -24,7 +24,7 @@ export default function Hero() {
   const { hero, personal } = portfolio;
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-24 pb-12 overflow-hidden">
+    <section className="relative h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-16 overflow-hidden">
       {/* Main content */}
       <motion.div
         initial={{ opacity: 0, y: 28 }}
