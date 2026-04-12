@@ -24,15 +24,15 @@ export default function Hero() {
   const { hero, personal } = portfolio;
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-12 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-24 pb-12 overflow-hidden">
       {/* Main content */}
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-4xl w-full mx-auto"
+        className="max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto"
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-[1.1] mb-8">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-[1.1] mb-8">
           Backend &{" "}
           <em className="not-italic" style={{ color: "#FF8C3A" }}>
             Distributed Systems
@@ -40,7 +40,7 @@ export default function Hero() {
           Engineer
         </h1>
 
-        <p className="text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed mb-10">
+        <p className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl text-zinc-400 max-w-2xl 2xl:max-w-3xl leading-relaxed mb-10">
           {hero.description}
         </p>
 
@@ -54,7 +54,7 @@ export default function Hero() {
           <a
             href={`mailto:${personal.email}`}
             aria-label="Email"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-orange-500 hover:text-orange-400 hover:orange-glow-icon transition-colors duration-200"
+            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
           >
             <Mail className="w-4 h-4" />
           </a>
@@ -63,7 +63,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-orange-500 hover:text-orange-400 hover:orange-glow-icon transition-colors duration-200"
+            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
           >
             <LinkedInIcon />
           </a>
@@ -72,7 +72,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-orange-500 hover:text-orange-400 hover:orange-glow-icon transition-colors duration-200"
+            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
           >
             <GitHubIcon />
           </a>
@@ -81,14 +81,14 @@ export default function Hero() {
 
       {/* CTA below social icons */}
       <motion.div
-        className="mt-8 max-w-4xl w-full mx-auto"
+        className="mt-8 max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
         <a
           href={`mailto:${personal.email}`}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 hover:opacity-90 btn-orange-hover"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 hover:opacity-90"
           style={{ backgroundColor: "#FF8C3A" }}
         >
           Get in touch

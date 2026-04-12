@@ -8,8 +8,8 @@ export default function Recognition() {
   const { features } = portfolio;
 
   return (
-    <section id="hackathons" className="py-20 px-8 md:px-16 lg:px-24 border-t border-zinc-800/50">
-      <div className="max-w-6xl mx-auto">
+    <section id="hackathons" className="py-20 2xl:py-28 px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 border-t border-zinc-800/50">
+      <div className="max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1600px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Recognition() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-zinc-100 tracking-tight">
             Hackathons
           </h2>
         </motion.div>

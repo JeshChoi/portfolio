@@ -18,9 +18,9 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="py-28 px-8 md:px-16 lg:px-24 border-t border-zinc-800/50 orange-pulse scroll-mt-16"
+      className="py-28 2xl:py-36 px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 border-t border-zinc-800/50 scroll-mt-16"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1600px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,13 +30,13 @@ export default function CTA() {
           <p className="text-xs text-zinc-500 tracking-widest uppercase font-medium mb-4">
             Get in touch
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-tight mb-6 max-w-3xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-tight mb-6 max-w-3xl 2xl:max-w-4xl">
             Let&apos;s build something{" "}
             <em className="not-italic" style={{ color: "#FF8C3A" }}>
               great.
             </em>
           </h2>
-          <p className="text-base text-zinc-400 max-w-xl leading-relaxed mb-10">
+          <p className="text-base 2xl:text-lg 3xl:text-xl text-zinc-400 max-w-xl 2xl:max-w-2xl leading-relaxed mb-10">
             I&apos;m open to new opportunities, collaborations, and interesting conversations.
             Whether it&apos;s a role, a project, or just a chat — reach out.
           </p>

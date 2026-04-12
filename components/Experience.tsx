@@ -40,8 +40,8 @@ export default function Experience() {
   const { experience } = portfolio;
 
   return (
-    <section id="experience" className="py-20 px-8 md:px-16 lg:px-24">
-      <div className="max-w-6xl mx-auto">
+    <section id="experience" className="py-20 2xl:py-28 px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48">
+      <div className="max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1600px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Experience() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-100 tracking-tight">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-zinc-100 tracking-tight">
             Experience
           </h2>
         </motion.div>
@@ -72,7 +72,7 @@ export default function Experience() {
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
                   <div>
                     <div className="flex items-center gap-2 flex-wrap">
-                      <h3 className="text-base font-bold text-zinc-100 leading-snug">
+                      <h3 className="text-base 2xl:text-lg 3xl:text-xl font-bold text-zinc-100 leading-snug">
                         {job.role}
                       </h3>
                       {i === 0 && (
@@ -98,7 +98,7 @@ export default function Experience() {
 
                 <ul className="mt-3 space-y-1.5">
                   {job.impact.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 text-sm text-zinc-300">
+                    <li key={point} className="flex items-start gap-2.5 text-sm 2xl:text-base 3xl:text-lg text-zinc-300">
                       <span className="mt-[7px] w-1 h-1 rounded-full bg-zinc-500 flex-shrink-0" />
                       {point}
                     </li>
