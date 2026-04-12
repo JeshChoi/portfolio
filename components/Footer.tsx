@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-zinc-800/50 py-6 px-8 md:px-16 lg:px-24">
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div className="max-w-6xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between gap-2">
         <p className="text-xs text-zinc-600">
           © {year} {personal.name}
         </p>

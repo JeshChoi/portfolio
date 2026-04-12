@@ -24,17 +24,17 @@ export default function Hero() {
   const { hero, personal } = portfolio;
 
   return (
-    <section className="relative min-h-screen flex flex-col items-start justify-center px-8 md:px-16 lg:px-24 pt-24 pb-12 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-12 overflow-hidden">
       {/* Main content */}
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-4xl w-full"
+        className="max-w-4xl w-full mx-auto"
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-[1.1] mb-8">
           Backend &{" "}
-          <em className="not-italic orange-glow" style={{ color: "#FF8C3A" }}>
+          <em className="not-italic" style={{ color: "#FF8C3A" }}>
             Distributed Systems
           </em>{" "}
           Engineer
@@ -81,7 +81,7 @@ export default function Hero() {
 
       {/* CTA below social icons */}
       <motion.div
-        className="mt-8"
+        className="mt-8 max-w-4xl w-full mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.5 }}

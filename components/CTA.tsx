@@ -20,7 +20,7 @@ export default function CTA() {
       id="contact"
       className="py-28 px-8 md:px-16 lg:px-24 border-t border-zinc-800/50 orange-pulse scroll-mt-16"
     >
-      <div className="max-w-6xl">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function CTA() {
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-100 leading-tight mb-6 max-w-3xl">
             Let&apos;s build something{" "}
-            <em className="not-italic orange-glow" style={{ color: "#FF8C3A" }}>
+            <em className="not-italic" style={{ color: "#FF8C3A" }}>
               great.
             </em>
           </h2>

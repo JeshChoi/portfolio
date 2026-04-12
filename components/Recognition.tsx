@@ -9,7 +9,7 @@ export default function Recognition() {
 
   return (
     <section id="hackathons" className="py-20 px-8 md:px-16 lg:px-24 border-t border-zinc-800/50">
-      <div className="max-w-6xl">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
