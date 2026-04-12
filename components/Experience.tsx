@@ -78,7 +78,7 @@ export default function Experience() {
                       {i === 0 && (
                         <span
                           className="text-xs px-2 py-0.5 rounded-full font-medium"
-                          style={{ backgroundColor: "rgba(255,140,58,0.15)", color: "#FF8C3A" }}
+                          style={{ backgroundColor: "rgba(96,165,250,0.15)", color: "#60A5FA" }}
                         >
                           Current
                         </span>

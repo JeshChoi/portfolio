@@ -33,7 +33,7 @@ export default function Press() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="group flex items-start gap-5 p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 hover:border-[#FF8C3A]/40 hover:bg-zinc-900/60 transition-all duration-200 btn-orange-hover"
+              className="group flex items-start gap-5 p-5 rounded-xl border border-zinc-800 bg-zinc-900/30 hover:border-[#60A5FA]/40 hover:bg-zinc-900/60 transition-all duration-200 btn-blue-hover"
             >
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1.5">
@@ -49,7 +49,7 @@ export default function Press() {
                 </p>
               </div>
               <ExternalLink
-                className="w-4 h-4 text-zinc-600 group-hover:text-[#FF8C3A] group-hover:orange-glow-icon transition-colors flex-shrink-0 mt-0.5"
+                className="w-4 h-4 text-zinc-600 group-hover:text-[#60A5FA] group-hover:blue-glow-icon transition-colors flex-shrink-0 mt-0.5"
                 strokeWidth={1.5}
               />
             </motion.a>

@@ -54,7 +54,7 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="py-8 flex gap-8 items-start rounded-2xl px-4 -mx-4 transition-all duration-300 hover:bg-zinc-900/60 btn-orange-hover hover:border-[#FF8C3A]/20"
+                className="py-8 flex gap-8 items-start rounded-2xl px-4 -mx-4 transition-all duration-300 hover:bg-zinc-900/60 btn-blue-hover hover:border-[#60A5FA]/20"
               >
                 {/* Left: project info */}
                 <Link href={`/projects/${project.slug}`} className="group flex gap-5 flex-1 min-w-0">

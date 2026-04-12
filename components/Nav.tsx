@@ -6,11 +6,11 @@ import Image from "next/image";
 import portfolio from "@/data/portfolio";
 
 const navLinks = [
-  { label: "Hackathons", href: "#hackathons" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
+  { label: "Hackathons", href: "/#hackathons" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Projects", href: "/#projects" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Nav() {
@@ -52,7 +52,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-zinc-400 hover:text-[#FF8C3A] hover:orange-glow transition-colors duration-200 tracking-wide"
+              className="text-sm text-zinc-400 hover:text-[#60A5FA] hover:blue-glow transition-colors duration-200 tracking-wide"
             >
               {link.label}
             </a>

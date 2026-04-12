@@ -33,7 +33,7 @@ export default function Recognition() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-[#FF8C3A]/40 transition-all duration-300 btn-orange-hover flex flex-col"
+              className="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-[#60A5FA]/40 transition-all duration-300 btn-blue-hover flex flex-col"
             >
               {/* Preview image */}
               <div className="relative w-full h-80 overflow-hidden bg-zinc-900 flex-shrink-0">
@@ -47,12 +47,12 @@ export default function Recognition() {
                 )}
                 {/* Award badge overlaid on image */}
                 {item.award && (
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-950/85 backdrop-blur-sm border border-[#FF8C3A]/40">
-                    <Trophy className="w-3 h-3 flex-shrink-0" style={{ color: "#FF8C3A" }} strokeWidth={2} />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-950/85 backdrop-blur-sm border border-[#60A5FA]/40">
+                    <Trophy className="w-3 h-3 flex-shrink-0" style={{ color: "#60A5FA" }} strokeWidth={2} />
                     <span className="text-xs font-semibold text-zinc-100 truncate">
                       {item.award.title}
                     </span>
-                    <span className="text-xs font-bold tabular-nums ml-auto flex-shrink-0" style={{ color: "#FF8C3A" }}>
+                    <span className="text-xs font-bold tabular-nums ml-auto flex-shrink-0" style={{ color: "#60A5FA" }}>
                       {item.award.amount}
                     </span>
                   </div>
@@ -66,7 +66,7 @@ export default function Recognition() {
                     {item.source}
                   </span>
                   <ExternalLink
-                    className="w-3.5 h-3.5 text-zinc-600 group-hover:text-[#FF8C3A] group-hover:orange-glow-icon transition-colors flex-shrink-0"
+                    className="w-3.5 h-3.5 text-zinc-600 group-hover:text-[#60A5FA] group-hover:blue-glow-icon transition-colors flex-shrink-0"
                     strokeWidth={1.5}
                   />
                 </div>

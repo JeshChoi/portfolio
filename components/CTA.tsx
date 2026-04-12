@@ -32,7 +32,7 @@ export default function CTA() {
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-tight mb-6 max-w-3xl 2xl:max-w-4xl">
             Let&apos;s build something{" "}
-            <em className="not-italic" style={{ color: "#FF8C3A" }}>
+            <em className="not-italic" style={{ color: "#60A5FA" }}>
               great.
             </em>
           </h2>
@@ -44,8 +44,8 @@ export default function CTA() {
           <div className="flex flex-wrap items-center gap-4">
             <a
               href={`mailto:${personal.email}`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 btn-orange-hover"
-              style={{ backgroundColor: "#FF8C3A" }}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 btn-blue-hover"
+              style={{ backgroundColor: "#60A5FA" }}
             >
               <Mail className="w-4 h-4" />
               Send an email

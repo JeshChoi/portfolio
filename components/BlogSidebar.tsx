@@ -52,7 +52,7 @@ export default function BlogSidebar() {
                   }`}
                   style={
                     isActive
-                      ? { color: "#FF8C3A", textShadow: "0 0 8px rgba(255,140,58,0.3)" }
+                      ? { color: "#60A5FA", textShadow: "0 0 8px rgba(96,165,250,0.3)" }
                       : undefined
                   }
                 >

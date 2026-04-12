@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
+import Image from "next/image";
 import portfolio from "@/data/portfolio";
 
 function LinkedInIcon() {
@@ -24,77 +25,98 @@ export default function Hero() {
   const { hero, personal } = portfolio;
 
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-16 overflow-hidden">
-      {/* Main content */}
-      <motion.div
-        initial={{ opacity: 0, y: 28 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto"
-      >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-[1.1] mb-8">
-          Backend &{" "}
-          <em className="not-italic" style={{ color: "#FF8C3A" }}>
-            Distributed Systems
-          </em>{" "}
-          Engineer
-        </h1>
+    <section className="relative h-screen flex items-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-16 overflow-hidden">
+      <div className="max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto flex items-center justify-between gap-12">
 
-        <p className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl text-zinc-400 max-w-2xl 2xl:max-w-3xl leading-relaxed mb-10">
-          {hero.description}
-        </p>
-
-        {/* Social icon links */}
+        {/* Left: text content */}
         <motion.div
-          className="flex items-center gap-3"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+          initial={{ opacity: 0, y: 28 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="flex-1 min-w-0"
         >
-          <a
-            href={`mailto:${personal.email}`}
-            aria-label="Email"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
-          >
-            <Mail className="w-4 h-4" />
-          </a>
-          <a
-            href={personal.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
-          >
-            <LinkedInIcon />
-          </a>
-          <a
-            href="https://github.com/joshuachoi"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
-          >
-            <GitHubIcon />
-          </a>
-        </motion.div>
-      </motion.div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-[1.15] mb-6">
+            <em className="not-italic blue-glow" style={{ color: "#60A5FA" }}>Infrastructure</em>{" &"}
+            <br />
+            <em className="not-italic blue-glow" style={{ color: "#3B82F6" }}>Distributed</em>{" Systems"}
+            <br />
+            Engineer
+          </h1>
 
-      {/* CTA below social icons */}
-      <motion.div
-        className="mt-8 max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
-      >
-        <a
-          href={`mailto:${personal.email}`}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 hover:opacity-90"
-          style={{ backgroundColor: "#FF8C3A" }}
+          <p className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl text-zinc-400 max-w-xl leading-relaxed mb-8">
+            {hero.description}
+          </p>
+
+          {/* Social icons */}
+          <motion.div
+            className="flex items-center gap-3 mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            <a
+              href={`mailto:${personal.email}`}
+              aria-label="Email"
+              className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
+            >
+              <Mail className="w-4 h-4" />
+            </a>
+            <a
+              href={personal.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="https://github.com/joshuachoi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors duration-200"
+            >
+              <GitHubIcon />
+            </a>
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+          >
+            <a
+              href={`mailto:${personal.email}`}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-zinc-900 transition-all duration-200 hover:opacity-90"
+              style={{ backgroundColor: "#60A5FA" }}
+            >
+              Get in touch
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </motion.div>
+        </motion.div>
+
+        {/* Right: portrait */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          className="hidden md:flex flex-shrink-0"
         >
-          Get in touch
-          <ArrowRight className="w-4 h-4" />
-        </a>
-      </motion.div>
+          <div className="w-56 h-56 lg:w-72 lg:h-72 2xl:w-80 2xl:h-80 rounded-full overflow-hidden border-2 border-zinc-700 ring-8 ring-zinc-900">
+            <Image
+              src="/josh_face.jpg"
+              alt="Joshua Choi"
+              width={320}
+              height={320}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+
+      </div>
     </section>
   );
 }

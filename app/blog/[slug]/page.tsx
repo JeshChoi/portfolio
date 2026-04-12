@@ -47,7 +47,7 @@ function renderBlock(block: BlogBlock, i: number) {
           <div className="h-px w-8 bg-zinc-700" />
           <div
             className="w-1.5 h-1.5 rounded-full"
-            style={{ backgroundColor: "#FF8C3A", opacity: 0.6 }}
+            style={{ backgroundColor: "#60A5FA", opacity: 0.6 }}
           />
           <div className="h-px w-8 bg-zinc-700" />
         </div>
@@ -106,7 +106,7 @@ export default async function BlogPostPage({
           className="mt-8 h-px"
           style={{
             background:
-              "linear-gradient(to right, rgba(255,140,58,0.3), transparent)",
+              "linear-gradient(to right, rgba(96,165,250,0.3), transparent)",
           }}
         />
       </header>

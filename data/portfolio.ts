@@ -96,7 +96,7 @@ const portfolio = {
       "Software Engineer building scalable infrastructure, AI systems, and production-grade platforms",
     subheadline: "Focused on identity systems, automation, and applied AI",
     description:
-      "I build scalable infrastructure and production systems — from identity platforms at Salesforce to LLM-powered workflows and high-throughput data systems.",
+      "Engineer at Salesforce building IAM platforms for 50K+ users. Specializing in high-throughput systems, automation, and LLM-powered workflows.",
     cta_primary: "View Projects",
     cta_secondary: "Contact",
   },

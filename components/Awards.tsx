@@ -30,11 +30,11 @@ export default function Awards() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-[#FF8C3A]/40 transition-all duration-200 btn-orange-hover"
+              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-[#60A5FA]/40 transition-all duration-200 btn-blue-hover"
             >
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center flex-shrink-0">
-                  <Trophy className="w-4.5 h-4.5 orange-glow-icon" style={{ color: "#FF8C3A" }} strokeWidth={1.5} />
+                  <Trophy className="w-4.5 h-4.5 blue-glow-icon" style={{ color: "#60A5FA" }} strokeWidth={1.5} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-4 mb-2">
