@@ -81,6 +81,23 @@ export default function Hero() {
             </a>
           </motion.div>
 
+          {/* Focus tags */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.4 }}
+            className="flex flex-wrap gap-2 mb-6"
+          >
+            {["Distributed Systems", "IAM & Identity", "High-Scale Infrastructure", "LLM Pipelines"].map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-2.5 py-1 rounded-full border border-zinc-800 text-zinc-500 font-medium tracking-wide"
+              >
+                {tag}
+              </span>
+            ))}
+          </motion.div>
+
           {/* CTA */}
           <motion.div
             initial={{ opacity: 0 }}

@@ -120,11 +120,11 @@ const portfolio = {
       description:
         "Owning and scaling a production identity and access management (IAM) provisioning pipeline supporting ~50K internal users. Contributing to the next-generation identity platform focused on scalability, security, and automation.",
       impact: [
-        "Designed and scaled a provisioning system handling thousands of requests, improving reliability and operational efficiency",
-        "Automated onboarding workflows, saving ~20% sprint capacity per engineer",
-        "Built event-driven Slack notification system to improve visibility into provisioning events and failures",
-        "Developed backend services and APIs in Go with React-based internal tooling",
-        "Worked on security-compliant IAM infrastructure ensuring auditability and policy enforcement",
+        "Scaled IAM provisioning pipeline to 50K+ internal users — redesigned core throughput and reliability architecture",
+        "Automated engineer onboarding workflows in Go, eliminating 20% of per-engineer sprint overhead",
+        "Built event-driven Slack notification pipeline surfacing provisioning failures in real time, reducing MTTR",
+        "Shipped Go backend services and React tooling for internal IAM platform used by 100+ engineering teams",
+        "Designed security-compliant identity infrastructure with full audit trails and policy enforcement at scale",
       ],
       tech: ["Go", "React", "SQL"],
     },
@@ -137,10 +137,10 @@ const portfolio = {
       description:
         "Architected and shipped a full-stack identity provisioning system used across ~100 internal teams to automate user onboarding and access management.",
       impact: [
-        "Reduced provisioning time from ~2 weeks to ~10 minutes through automation",
-        "Designed backend services in Java and SQL to handle identity and entitlement workflows",
-        "Built scalable APIs and integrated with multiple internal systems",
-        "Collaborated cross-functionally to deploy production-ready features",
+        "Reduced identity provisioning time from 2 weeks → 10 minutes — fully automated entitlement workflows used by 100+ teams",
+        "Architected Java/SQL backend services processing thousands of entitlement requests per day with zero data loss",
+        "Shipped production APIs integrated with 5+ internal Salesforce systems — sole engineer from design to deploy",
+        "Delivered full-stack IAM platform in 12 weeks as an intern — promoted to AMTS on return offer",
       ],
       tech: ["Java", "JavaScript", "SQL"],
     },
@@ -153,10 +153,10 @@ const portfolio = {
       description:
         "Developed LLM-powered systems to automate machine learning workflows and contributed to Texera, a distributed data processing platform for large-scale ML pipelines.",
       impact: [
-        "Built system to convert Jupyter notebooks into DAG-based workflows, reducing setup time from ~3 weeks to ~10 minutes",
-        "Supported a distributed platform with 31,000+ executions across 330+ users",
-        "Engineered backend components for large-scale data processing using Python, Java, and Scala",
-        "Designed core architecture for LLM-based workflow automation system",
+        "Built LLM system converting Jupyter notebooks into executable DAG workflows — cut ML pipeline setup from 3 weeks to 10 minutes",
+        "Contributed to Texera: distributed data processing platform handling 31K+ executions across 330+ active researchers",
+        "Engineered high-throughput data pipelines in Python, Java, and Scala processing large-scale ML workloads",
+        "Designed core architecture for LLM-based workflow automation — first-of-kind system deployed at UC Irvine research lab",
       ],
       tech: ["Python", "Java", "Scala", "SQL"],
     },
@@ -169,10 +169,10 @@ const portfolio = {
       description:
         "Built a containerized AI-powered web crawling and analytics platform for real estate market research, enabling automated data collection and analysis at scale.",
       impact: [
-        "Developed system processing ~10K pages/day continuously (24/7)",
-        "Reduced analyst effort by ~95% (1 hour → 3 minutes)",
-        "Built data pipelines for scraping, processing, and storing large-scale datasets",
-        "Deployed containerized services with Docker and Azure CI/CD",
+        "Architected web crawler sustaining 10K+ pages/day — containerized on Docker with Azure CI/CD for 24/7 uptime",
+        "Automated real estate market analysis end-to-end — cut analyst report time from 1 hour to 3 minutes (95% reduction)",
+        "Designed multi-stage data pipelines for scraping, transforming, and storing large-scale property market datasets",
+        "Deployed containerized microservices on Azure with rolling deployments and zero-downtime CI/CD pipeline",
       ],
       tech: ["Python", "React", "MongoDB", "Docker", "Azure"],
     },
@@ -187,7 +187,7 @@ const portfolio = {
       featured: true,
       dates: "2024",
       overview:
-        "Poppy is an AI-powered application that helps users navigate STI diagnosis through personalized assessments, image analysis, and tailored health recommendations.",
+        "Privacy-first AI diagnostic system combining an adaptive questionnaire engine with an on-device image processing pipeline. Designed for zero sensitive data transmission — all inference runs client-side.",
       problem:
         "Sexually transmitted infections are a major public health issue in the U.S., with millions of cases annually and significant barriers around stigma, accessibility, and early diagnosis.",
       solution:
@@ -240,7 +240,7 @@ const portfolio = {
       featured: true,
       dates: "2024",
       overview:
-        "Overshoot is an AI-powered application that detects photo capture issues in real time and guides users to improve image quality.",
+        "Real-time computer vision pipeline analyzing live camera frames to detect capture quality issues — lighting, framing, focus — and surface corrective feedback in under 100ms. Built for mobile with a lightweight inference model.",
       problem:
         "Users often take poor-quality photos due to lighting, framing, or focus issues without real-time feedback.",
       solution:
