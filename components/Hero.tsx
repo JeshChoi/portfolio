@@ -71,7 +71,7 @@ export default function Hero() {
               <LinkedInIcon />
             </a>
             <a
-              href="https://github.com/joshuachoi"
+              href="https://github.com/JeshChoi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
