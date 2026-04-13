@@ -81,6 +81,16 @@ export default function Hero() {
             </a>
           </motion.div>
 
+          {/* Personal line */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.45, duration: 0.4 }}
+            className="text-sm text-zinc-600 italic mb-6"
+          >
+            When I&apos;m not building systems, I&apos;m lifting, cooking Korean food, or watching questionable amounts of dog videos.
+          </motion.p>
+
           {/* Focus tags */}
           <motion.div
             initial={{ opacity: 0 }}
