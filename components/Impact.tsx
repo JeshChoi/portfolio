@@ -4,34 +4,38 @@ import { motion } from "framer-motion";
 
 const impacts = [
   {
-    metric: "2 weeks → 10 min",
+    metric: "2 weeks",
+    after: "10 min",
     label: "IAM provisioning time",
-    context: "Shipped to 100+ teams · Salesforce internship",
+    context: "Salesforce · 100+ teams",
   },
   {
     metric: "20%",
     label: "Sprint capacity saved",
-    context: "Per engineer via workflow automation · Salesforce",
+    context: "Salesforce · per engineer",
   },
   {
     metric: "50K+",
     label: "Internal users served",
-    context: "On production IAM platform · Salesforce",
+    context: "Salesforce · production IAM",
   },
   {
-    metric: "10K pages/day",
+    metric: "10K",
+    unit: "pages/day",
     label: "Web crawler throughput",
-    context: "Running 24/7 on Docker + Azure · OC Vibe",
+    context: "OC Vibe · 24/7 uptime",
   },
   {
-    metric: "1 hr → 3 min",
+    metric: "1 hr",
+    after: "3 min",
     label: "Analyst time per report",
-    context: "95% reduction via AI automation · OC Vibe",
+    context: "OC Vibe · 95% reduction",
   },
   {
-    metric: "31K+ executions",
+    metric: "31K+",
+    unit: "executions",
     label: "ML workflows processed",
-    context: "Across 330+ researchers · UC Irvine Texera",
+    context: "UC Irvine · 330+ researchers",
   },
 ];
 
@@ -48,21 +52,41 @@ export default function Impact() {
           Impact at scale
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-800/40 rounded-2xl overflow-hidden border border-zinc-800/40">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-800/30 rounded-2xl overflow-hidden border border-zinc-800/30">
           {impacts.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.06 }}
               viewport={{ once: true }}
-              className="bg-zinc-950 px-6 py-5"
+              className="bg-zinc-950 px-6 py-6 flex flex-col gap-1"
             >
-              <p className="text-xl md:text-2xl font-bold text-zinc-100 tracking-tight mb-1">
-                {item.metric}
-              </p>
-              <p className="text-sm font-medium text-zinc-300 mb-1">{item.label}</p>
-              <p className="text-xs text-zinc-600 leading-relaxed">{item.context}</p>
+              {/* Big metric */}
+              <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="text-3xl md:text-4xl font-black text-zinc-50 tracking-tight leading-none">
+                  {item.metric}
+                </span>
+                {item.unit && (
+                  <span className="text-base font-semibold text-zinc-500">
+                    {item.unit}
+                  </span>
+                )}
+                {item.after && (
+                  <>
+                    <span className="text-lg font-bold" style={{ color: "#60A5FA" }}>→</span>
+                    <span className="text-3xl md:text-4xl font-black tracking-tight leading-none" style={{ color: "#60A5FA" }}>
+                      {item.after}
+                    </span>
+                  </>
+                )}
+              </div>
+
+              {/* Label */}
+              <p className="text-sm font-medium text-zinc-300">{item.label}</p>
+
+              {/* Context — very muted */}
+              <p className="text-xs text-zinc-700">{item.context}</p>
             </motion.div>
           ))}
         </div>

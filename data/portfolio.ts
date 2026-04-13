@@ -108,7 +108,7 @@ const portfolio = {
     { label: "Executions Powered", value: "31,000+", context: "Texera platform" },
     { label: "Users Impacted", value: "330+", context: "ML workflow system" },
     { label: "Manual Work Reduced", value: "95%", context: "AI real estate platform" },
-    { label: "Hackathon Award", value: "$20,000", context: "National Academies Winner" },
+    { label: "Hackathon Award", value: "$20,000", context: "National Academies of Sciences, Engineering, and Medicine (NASEM) · CDC · NACCHO" },
   ] as Metric[],
 
   experience: [
@@ -201,7 +201,7 @@ const portfolio = {
       impact: [
         "1st Place — National AI Health Hackathon",
         "$20,000 grant funding",
-        "Recognized by National Academy of Medicine",
+        "Recognized by NASEM, CDC, and NACCHO",
         "Built solution addressing U.S. STI epidemic",
       ],
       technical_details: {
@@ -216,7 +216,7 @@ const portfolio = {
       awards: [
         {
           title: "1st Place",
-          organization: "National Academies of Sciences, Engineering, and Medicine",
+          organization: "National Academies of Sciences, Engineering, and Medicine (NASEM) · CDC · NACCHO",
           amount: "$20,000",
         },
       ],
@@ -226,7 +226,7 @@ const portfolio = {
       },
       press: [
         {
-          source: "National Academy of Medicine",
+          source: "National Academies of Sciences, Engineering, and Medicine (NASEM) · CDC · NACCHO",
           description:
             "Featured as a winning solution addressing barriers in sexual health care through AI-driven diagnosis and personalized guidance.",
         },
@@ -267,7 +267,7 @@ const portfolio = {
   awards: [
     {
       title: "1st Place — National AI Health Hackathon",
-      organization: "National Academies of Sciences, Engineering, and Medicine",
+      organization: "National Academies of Sciences, Engineering, and Medicine (NASEM) · CDC · NACCHO",
       amount: "$20,000",
       description:
         "Awarded for building Poppy, an AI-powered STI diagnosis platform addressing public health challenges.",
@@ -283,11 +283,11 @@ const portfolio = {
 
   features: [
     {
-      source: "National Academy of Medicine",
+      source: "National Academies of Sciences, Engineering, and Medicine (NASEM) · CDC · NACCHO",
       title: "Coding for Change: Tackling the U.S. STI Epidemic",
       link: "https://nam.edu/news-and-insights/coding-for-change-national-academies-hackathons-tackle-the-u-s-sti-epidemic/",
       description:
-        "Highlighted Poppy as a winning AI solution improving STI diagnosis accessibility and early detection.",
+        "Winning AI solution for STI diagnosis. Recognized by the National Academy of Medicine.",
       image: "/poppy_conference.JPEG",
       award: { title: "1st Place — National AI Health Hackathon", amount: "$20,000" },
       projectSlug: "poppy",
@@ -297,7 +297,7 @@ const portfolio = {
       title: "AI Innovation Challenge Winners",
       link: "https://news.uci.edu/2024/02/02/uc-irvines-antrepreneur-center-announces-winners-of-ai-innovation-challenge/",
       description:
-        "Recognized Overshoot as a top-performing AI project in the entrepreneurship competition out of 80+ teams.",
+        "Top 3 of 80+ teams at UCI's AI Innovation Challenge.",
       image: "/overshoot_win.JPG",
       award: { title: "Top 3 — AI Innovation Challenge", amount: "$2,000" },
       projectSlug: "overshoot",
