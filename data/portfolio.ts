@@ -120,8 +120,7 @@ const portfolio = {
       description:
         "Owning and scaling a production identity and access management (IAM) provisioning pipeline supporting ~50K internal users. Contributing to the next-generation identity platform focused on scalability, security, and automation.",
       impact: [
-        "Scaled IAM provisioning pipeline to 50K+ internal users — redesigned core throughput and reliability architecture",
-        "Automated engineer onboarding workflows in Go, eliminating 20% of per-engineer sprint overhead",
+        "Identity and Access Management Team",
         "Built event-driven Slack notification pipeline surfacing provisioning failures in real time, reducing MTTR",
         "Shipped Go backend services and React tooling for internal IAM platform used by 100+ engineering teams",
         "Designed security-compliant identity infrastructure with full audit trails and policy enforcement at scale",
@@ -138,8 +137,8 @@ const portfolio = {
         "Architected and shipped a full-stack identity provisioning system used across ~100 internal teams to automate user onboarding and access management.",
       impact: [
         "Reduced identity provisioning time from 2 weeks → 10 minutes — fully automated entitlement workflows used by 100+ teams",
-        "Architected Java/SQL backend services processing thousands of entitlement requests per day with zero data loss",
-        "Shipped production APIs integrated with 5+ internal Salesforce systems — sole engineer from design to deploy",
+        "Automated engineer onboarding workflows, eliminating 20% of per-engineer sprint overhead",
+        "Architected Java/SQL backend services processing hundreds of entitlement requests per day with zero data loss",
         "Delivered full-stack IAM platform in 12 weeks as an intern — promoted to AMTS on return offer",
       ],
       tech: ["Java", "JavaScript", "SQL"],
