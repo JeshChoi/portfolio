@@ -120,10 +120,7 @@ const portfolio = {
       description:
         "Owning and scaling a production identity and access management (IAM) provisioning pipeline supporting ~50K internal users. Contributing to the next-generation identity platform focused on scalability, security, and automation.",
       impact: [
-        "Identity and Access Management Team",
-        "Built event-driven Slack notification pipeline surfacing provisioning failures in real time, reducing MTTR",
-        "Shipped Go backend services and React tooling for internal IAM platform used by 100+ engineering teams",
-        "Designed security-compliant identity infrastructure with full audit trails and policy enforcement at scale",
+        "Identity and Access Management Team"
       ],
       tech: ["Go", "React", "SQL"],
     },
