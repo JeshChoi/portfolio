@@ -8,8 +8,8 @@ export default function Education() {
   const { education } = portfolio;
 
   return (
-    <section className="py-24 px-6 border-t border-zinc-800/50">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 2xl:py-28 px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 border-t border-zinc-800/50">
+      <div className="max-w-6xl 2xl:max-w-7xl 3xl:max-w-[1600px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,25 +45,9 @@ export default function Education() {
                   {education.gpa} GPA
                 </span>
               </div>
-              <p className="text-sm text-zinc-400 font-medium mb-6">
-                {education.degree}
+              <p className="text-sm text-zinc-400 font-medium">
+                {education.degree} · {education.graduated}
               </p>
-
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-3">
-                  Coursework
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {education.coursework.map((course) => (
-                    <span
-                      key={course}
-                      className="text-xs px-2.5 py-1 bg-zinc-800/60 text-zinc-400 rounded-lg border border-zinc-700/50"
-                    >
-                      {course}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </motion.div>

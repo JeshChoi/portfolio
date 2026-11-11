@@ -25,7 +25,7 @@ export default function Hero() {
   const { hero, personal } = portfolio;
 
   return (
-    <section className="relative h-screen flex items-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 pt-16 overflow-hidden">
+    <section className="relative min-h-svh py-24 flex items-center px-8 md:px-16 lg:px-24 2xl:px-32 3xl:px-48 overflow-hidden">
       <div className="max-w-4xl 2xl:max-w-5xl 3xl:max-w-6xl w-full mx-auto flex items-center justify-between gap-12">
 
         {/* Left: text content */}
@@ -36,11 +36,11 @@ export default function Hero() {
           className="flex-1 min-w-0"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl font-bold tracking-tight text-zinc-100 leading-[1.15] mb-6">
-            <em className="not-italic blue-glow" style={{ color: "#60A5FA" }}>Infrastructure</em>{" &"}
+            <em className="not-italic blue-glow" style={{ color: "#60A5FA" }}>Reliable systems.</em>
             <br />
-            <em className="not-italic blue-glow" style={{ color: "#3B82F6" }}>Distributed</em>{" Systems"}
+            Practical AI.
             <br />
-            Engineer
+            Software Engineer.
           </h1>
 
           <p className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl text-zinc-400 max-w-xl leading-relaxed mb-8">
@@ -98,7 +98,7 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.4 }}
             className="flex flex-wrap gap-2 mb-6"
           >
-            {["Distributed Systems", "IAM & Identity", "High-Scale Infrastructure", "LLM Pipelines"].map((tag) => (
+            {["IAM & Identity", "Distributed Systems", "Infrastructure Automation", "AI Agents"].map((tag) => (
               <span
                 key={tag}
                 className="text-xs px-2.5 py-1 rounded-full border border-zinc-800 text-zinc-500 font-medium tracking-wide"
@@ -130,7 +130,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-          className="hidden md:flex flex-shrink-0"
+          className="hidden lg:flex flex-shrink-0"
         >
           <div className="w-56 h-56 lg:w-72 lg:h-72 2xl:w-80 2xl:h-80 rounded-full overflow-hidden border-2 border-zinc-700 ring-8 ring-zinc-900">
             <Image

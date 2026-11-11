@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import portfolio from "@/data/portfolio";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +22,13 @@ export const metadata: Metadata = {
   },
   title: "Joshua Choi — Portfolio",
   description:
-    "Software Engineer building scalable infrastructure, AI systems, and production-grade platforms. Identity systems, automation, and applied AI.",
+    portfolio.hero.description,
   keywords: ["Software Engineer", "Joshua Choi", "Salesforce", "AI", "Full Stack", "Next.js"],
   authors: [{ name: "Joshua Choi" }],
   openGraph: {
     title: "Joshua Choi — Portfolio",
     description:
-      "Software Engineer building scalable infrastructure, AI systems, and production-grade platforms.",
+      portfolio.hero.description,
     type: "website",
   },
 };

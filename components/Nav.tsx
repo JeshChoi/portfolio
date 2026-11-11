@@ -6,9 +6,9 @@ import Image from "next/image";
 import portfolio from "@/data/portfolio";
 
 const navLinks = [
-  { label: "Hackathons", href: "/#hackathons" },
   { label: "Experience", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
